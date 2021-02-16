@@ -1,0 +1,54 @@
+body{
+    background-blend-mode: multiply;
+    margin: 0px;
+    width: 100%;
+}
+#rech{
+    background-color: rgba(0, 0, 0, 0.747);
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    margin: 0px;
+    height: 123px;
+}
+#rech a{
+     padding: 50px 105px 50px 105px; 
+    text-decoration: none;
+    color: whitesmoke;
+    height: 50PX;
+    border-color: black; 
+}
+#paralaxe{
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    background-image: url(Halibel.png);
+}
+#pos{
+    max-width: 100%;
+    background: #0000006b;
+}
+#titre{
+    text-align: center;
+    margin-top: 150px;
+    background-color: rgba(0, 0, 0, 0.856) ;
+    color: whitesmoke;
+    padding: 10px 0px 10px 0px;
+    width: 100%;
+}
+div p {
+    font-size: 22px;
+    letter-spacing: 5px;
+    word-spacing: 25px;
+}
+#rech a:hover{
+    transition-property: all;
+    transition-duration: 500ms;
+    background-color: rgba(255, 255, 255, 0.103);
+}
+.card{
+    /* margin: 100px; */
+    width: 80%;
+    
+
+}
