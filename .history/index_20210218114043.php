@@ -14,31 +14,34 @@
     class Voiture{
     public $couleur;
     public $annee;
-
-    function __construct($c, $a){
-        $this->couleur = $c;
-        $this->annee = $a;
-    }
-
     public function demarrer(){
         return "mais c'était sur en fait."
         . $this->couleur;
         }
             
     }
-    function __destruct(){
 
-    }
-
-    $clio1 = new Voiture("rouge", 2010);
+    $clio1 = new Voiture;
+    $clio1 -> couleur = "Fiente";
+    $clio1->annee = 2010;
     echo "Ma bite a la couleur $clio1->couleur" . "<br>";
     echo $clio1->demarrer();
 
-    $clio2 = new Voiture("blanche", 2009);
-    echo "Ma clio a la couleur $clio2->couleur". "<br>";
+    $clio2 = new Voiture;
+    $clio2->couleur = "Noir";
+    $clio2->annee = 2010;
+    echo "Ma clio a la couleur
+    $clio2->couleur". "<br>";
     echo $clio2->demarrer();
 
     echo "<br>";
+    
+    $chaine="Coucou";
+    echo $chaine;
+    var_dump($chaine);
+    
+
+    
     ?>
 </body>
 </html>

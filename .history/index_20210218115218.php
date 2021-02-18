@@ -27,7 +27,7 @@
             
     }
     function __destruct(){
-
+        
     }
 
     $clio1 = new Voiture("rouge", 2010);
@@ -35,7 +35,8 @@
     echo $clio1->demarrer();
 
     $clio2 = new Voiture("blanche", 2009);
-    echo "Ma clio a la couleur $clio2->couleur". "<br>";
+    echo "Ma clio a la couleur
+    $clio2->couleur". "<br>";
     echo $clio2->demarrer();
 
     echo "<br>";
