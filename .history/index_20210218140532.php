@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
     <h1> Les objets </h1>
 
     <?php
-
+    
     // class Voiture{
     // public $couleur;
     // public $annee;
@@ -30,7 +28,7 @@
 
     // }        
     // }
-
+    
 
     // $clio1 = new Voiture("rouge", 2010);
     // echo "Ma bite a la couleur $clio1->couleur" . "<br>";
@@ -42,43 +40,25 @@
 
     // echo "<br>";
 
-    class fruit
-    {
-        private $name;
-        public $poid;
+    class fruit {
+        public $poids;
         public $couleur;
-        public $prix;
 
-
-
-        public function SetName($n)
-        {
-            if($n !="Papaye" && $n !="Ananas"){
-                return "nom incorrecte";
-            } else {
-                $this->name = $n;
-            }
-        }
-        public function getName($n)
-        {
-            return $this->name;
+        public function manger(){
+            echo "Ici pour manger le fruit";
         }
     }
 
-    class papaye extends fruit
-    {
+    class papaye extends fruit {
         public $provenance;
 
-        public function cueillir()
-        {
+        public function cueillir() {
             echo "Ici pour cueillir la papaye";
         }
     }
-    $mapapaye = new papaye;
-    $mapapaye->provenance = "Amérique du sud";
-    $mapapaye->couleur = "Rouge";
-    var_dump($mapapaye)
+$mapapaye = new papaye;
+$mapapaye->provenance = "Amérique du sud";
+var_dump($mapapaye)
     ?>
 </body>
-
 </html>
