@@ -47,21 +47,11 @@
         private $name;
         public $poid;
         public $couleur;
-        public $prix;
 
 
-
-        public function SetName($n)
+        public function manger()
         {
-            if($n !="Papaye" && $n !="Ananas"){
-                return "nom incorrecte";
-            } else {
-                $this->name = $n;
-            }
-        }
-        public function getName($n)
-        {
-            return $this->name;
+            echo "Ici pour manger le fruit";
         }
     }
 
