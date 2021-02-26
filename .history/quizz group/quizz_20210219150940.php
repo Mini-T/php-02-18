@@ -14,9 +14,9 @@ class question{
     public $reponse;
 
 }
-$question = array(1 => $q1, $q2);
+
 $q1 = new question;
-$q1->content = "que disent 2 fesses dans une pirogue ?";
+$q1->content = "que disent 2 fesses dans une pirogue ?"; "<br>" ;
 $q1->reponse = "dis-donc ça commence à ramer du cul là non ?";
 
 $q2 = new question;
@@ -25,24 +25,17 @@ $q2->reponse = "Une souris.";
 
 ?>
 <form method="POST" action="">
-    <?php echo $q1->content;
-     foreach ($question as $key => $reponse) {?> <br>
+    <?php echo $q1->content?>
     
     <input type="text" name="r1" id="r1" placeholder="Votre réponse"> <br>
     <input type="submit" name="envoyer" id="envoyer"> <br>
     
     <?php 
-    
-    if(!empty($_POST)){
-        echo $_POST;
-        if($_POST == $reponse){
-            echo "bonne réponse";
-        } else {
-            echo "mauvaise réponse";
+    echo $_POST['r1'];
+    if($_POST['r1'] == $q1->reponse){
+        echo "bonne réponse";
         }
-    }
-}
-?>
+    ?>
 
     
 

@@ -14,7 +14,7 @@ class question{
     public $reponse;
 
 }
-$question = array(1 => $q1, $q2);
+$question = array(1 => $q1, 2 => $q2);
 $q1 = new question;
 $q1->content = "que disent 2 fesses dans une pirogue ?";
 $q1->reponse = "dis-donc ça commence à ramer du cul là non ?";
@@ -33,9 +33,9 @@ $q2->reponse = "Une souris.";
     
     <?php 
     
-    if(!empty($_POST)){
-        echo $_POST;
-        if($_POST == $reponse){
+    if(!empty($_POST[])){
+        echo $_POST['i'];
+        if($_POST['i'] == $key){
             echo "bonne réponse";
         } else {
             echo "mauvaise réponse";

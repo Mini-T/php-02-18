@@ -33,9 +33,9 @@ $q2->reponse = "Une souris.";
     
     <?php 
     
-    if(!empty($_POST)){
-        echo $_POST;
-        if($_POST == $reponse){
+    if(!empty($_POST['1'])){
+        echo $_POST['1'];
+        if($_POST['1'] == $key){
             echo "bonne réponse";
         } else {
             echo "mauvaise réponse";
