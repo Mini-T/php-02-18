@@ -15,8 +15,9 @@
             background:'pink',
             height:'500px',
             borderRadius:'50% 50% 0 0',
-            borderStyle: 'groove',
-        }, 3000, Infinity );
+            borderStyle: 'groove'
+            
+        }, 3000 );
         
     }
     

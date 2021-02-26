@@ -16,7 +16,10 @@
             height:'500px',
             borderRadius:'50% 50% 0 0',
             borderStyle: 'groove',
-        }, 3000, Infinity );
+            delay : 100,
+            height : '100px'
+            
+        }, 3000 );
         
     }
     
