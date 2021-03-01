@@ -11,7 +11,7 @@
 </body>
 </html>
 <?php
-require_once("header.inc.php");
+
 try {
     $pdo = new PDO("mysql:host=localhost;dbname=réseau", "root", "");
 

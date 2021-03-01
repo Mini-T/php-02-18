@@ -1,0 +1,15 @@
+.card{
+    margin-top: 25% ;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: black;
+    width: 25%;
+}
+input{
+    border-radius: 10px;
+    border: none;
+    background: rgb(230, 230, 230);
+    margin: 5px;
+    padding: 10px;
+}

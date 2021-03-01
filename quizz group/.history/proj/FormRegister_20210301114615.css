@@ -1,0 +1,19 @@
+.card{
+    margin-top: 25% ;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    background: black;
+    width: 25%;
+    height: auto;
+}
+input{
+    align-self: center;
+    border-radius: 10px;
+    border: none;
+    background: rgb(230, 230, 230);
+    margin: 5px;
+    padding: 10px;
+    
+}

@@ -1,0 +1,10 @@
+form{
+    text-align: center;
+    background: black;
+   
+}
+input{
+    border: none;
+    background: rgb(230, 230, 230);
+    padding: 5px;
+}
