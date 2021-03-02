@@ -1,0 +1,21 @@
+.card{
+    margin-top: 25% ;
+    display: flex;
+    align-items: flex-start;
+    background: rgb(245, 245, 245);
+    width: 100%;
+    flex-direction: column;
+
+}
+input{
+    align-self: center;
+    border-radius: 10px;
+    border: none;
+    background: rgb(235, 235, 235);
+    margin: 5px;
+    padding: 10px;   
+}
+#container{
+    background: black;
+    justify-content: center;
+}

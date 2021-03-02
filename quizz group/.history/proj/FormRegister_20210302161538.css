@@ -69,14 +69,12 @@ input:focus{
     background: rgb(255, 255, 255);
 }
 button a{
-
     text-decoration: none;
     color: whitesmoke;
     font-size: 30px;
     padding: 10px
 }
 button{
-    border-radius: 10px;
     background: rgb(214, 0, 0);
     outline: none;
 }

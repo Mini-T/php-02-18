@@ -1,0 +1,24 @@
+.card{
+    margin-top: 25% ;
+    display: flex;
+    align-items: flex-start;
+    background: rgb(245, 245, 245);
+    width: 100%;
+    flex-direction: column;
+
+}
+input{
+    align-self: center;
+    border-radius: 10px;
+    border: none;
+    background: rgb(235, 235, 235);
+    margin: 5px;
+    padding: 10px;   
+}
+#container{
+    background: linear-gradient(rgb(248, 248, 248), rgb(214, 214, 214));
+    align-self: center;
+    text-align: center;
+    padding:5px ;
+    
+}

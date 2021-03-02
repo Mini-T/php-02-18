@@ -1,0 +1,43 @@
+.card{
+    margin-top: 25% ;
+    display: flex;
+    align-items: flex-start;
+    background: white;
+    width: 100%;
+    flex-direction: column;
+
+}
+input{
+    color: rgb(131, 131, 131);
+    align-self: center;
+    border-radius: 10px;
+    border: none;
+    background: rgb(77, 77, 77);
+    margin: 5px;
+    padding: 10px;   
+    width: auto;
+    max-width: 100%;
+}
+#container{
+    
+    background: rgb(51, 51, 51);
+    align-self: center;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding:5px ; 
+    border-radius: 20px; 
+
+}
+#border{
+    background: rgb(14, 14, 14);
+    align-self: center;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border-radius: 20px;
+}
+p{
+    padding: 20px;
+    color: rgb(148, 0, 0);
+}

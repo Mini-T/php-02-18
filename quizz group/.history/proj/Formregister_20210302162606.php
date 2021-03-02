@@ -67,15 +67,15 @@
                                 </p>
                                 <br>
                                 <button><a href="FormLogin.php">Login</a></button>
-                                <?php } elseif ($fetchassocshowI > 0) { ?>
+                                <?php
+                                if ($fetchassocshowI > 0) { ?>
                                     <p>
                                         TON PUTAIN D'IGN EST DEJA PRIS PAUVRE MERDE
                                     </p>
                                     <br>
                                     <button><a href="FormLogin.php">Login</a></button>
-                                
                                 <?php }
-                            
+                            }
                         } else {
                             try {
                                 $pdo->exec($register); ?>

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="FormRegister.css">
 
     <?php
-
+    
     try {
         $pdo = new PDO("mysql:host=localhost;dbname=réseau", "root", "");
 
@@ -39,7 +39,7 @@
 
                     <?php
                     if (!empty($_POST['email'] and $_POST['Username'] and $_POST['mdp'])) {
-
+                        
                         $postmail = $_POST['email'];
 
                         $postign = $_POST['Username'];
@@ -61,27 +61,25 @@
 
 
                         if ($fetchassocshowM > 0 or $fetchassocshowI > 0) {
+                            if ($fetchassocshowI > 0) { ?>
+                                <p>
+                                    TON PUTAIN D'IGN EST DEJA PRIS PAUVRE MERDE
+                                </p><br>
+                                <button><a href="FormLogin.php">Login</a></button>
+                            <?php }
                             if ($fetchassocshowM > 0) { ?>
                                 <p>
-                                    e-mail déjà attribué
+                                    T'as déjà un putain de compte avec ce mail. Sale merde.
                                 </p>
                                 <br>
-                                <button><a href="FormLogin.php">Login</a></button>
-                                <?php } elseif ($fetchassocshowI > 0) { ?>
-                                    <p>
-                                        TON PUTAIN D'IGN EST DEJA PRIS PAUVRE MERDE
-                                    </p>
-                                    <br>
-                                    <button><a href="FormLogin.php">Login</a></button>
-                                
-                                <?php }
-                            
+                        <?php }
                         } else {
                             try {
                                 $pdo->exec($register); ?>
-                                <h1> enregistré</h1>
-                                <a href="FormLogin.php">Login</a>
-                        <?php } catch (PDOException $e) {
+                                 <h1> enregistré</h1>
+                                 <a href="FormLogin.php">Login</a>
+                                <?php }
+                                catch (PDOException $e) {
                                 echo "command failed" . $e->getmessage;
                             }
                         }

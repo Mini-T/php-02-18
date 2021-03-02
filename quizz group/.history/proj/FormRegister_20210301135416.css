@@ -1,0 +1,25 @@
+.card{
+    margin-top: 25% ;
+    display: flex;
+    align-items: flex-start;
+    background: rgb(245, 245, 245);
+    width: 100%;
+    flex-direction: column;
+
+}
+input{
+    align-self: center;
+    border-radius: 10px;
+    border: none;
+    background: rgb(235, 235, 235);
+    margin: 5px;
+    padding: 10px;   
+}
+#container{
+    background: radial-gradient(ellipse at top right ,#FFFFFF, transparent),
+                radial-gradient(ellipse at top left, #FFFFFF, #C3C3C3);
+    align-self: center;
+    text-align: center;
+    padding:5px ;
+    
+}

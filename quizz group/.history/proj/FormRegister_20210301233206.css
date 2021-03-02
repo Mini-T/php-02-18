@@ -68,15 +68,15 @@ input:focus{
 #register:hover{
     background: rgb(255, 255, 255);
 }
-button a{
-
+a{
     text-decoration: none;
     color: whitesmoke;
     font-size: 30px;
     padding: 10px
 }
 button{
-    border-radius: 10px;
-    background: rgb(214, 0, 0);
-    outline: none;
+    background: linear-gradient(to left, 3%, rgb(255, 255, 255), transparent),
+                linear-gradient(to right, 3%, rgb(51, 51, 51), transparent),
+                linear-gradient(to top, 3%, rgb(51, 51, 51), transparent),
+                linear-gradient(to bottom, 3%, rgb(51, 51, 51), transparent);
 }

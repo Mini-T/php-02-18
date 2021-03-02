@@ -1,5 +1,5 @@
 .card{
-    margin-top: 2% ;
+    margin-top: 25% ;
     display: flex;
     align-items: flex-start;
     background: white;
@@ -8,24 +8,17 @@
 
 }
 input{
-    font-family: quicksand;
-    color: rgb(223, 223, 223);
-    font-size: 45px;
+    color: rgb(131, 131, 131);
+    font-size: 7px;
     text-align: center;
     align-self: center;
     border-radius: 10px;
     border: none;
     background: rgb(77, 77, 77);
-    margin: 15px;
-    padding: 10px;   
+    margin: 100px;
+    padding: 50px;   
     width: 500px;
     max-width: 100%;
-}
-input:hover{
-    opacity: 100%;
-    color: black;
-    transition: ease-out 300ms;
-    background:rgb(134, 134, 134) ;
 }
 #container{
     
@@ -48,35 +41,22 @@ input:hover{
 }
 p{
     padding: 5px 15px 5px 15px;
-    font-family: quicksand;
+    font-family: wingdings;
     text-transform: uppercase;
     color: rgb(148, 0, 0);
 }
-p:hover{
-    font-family: quicksand;
-    transition-duration: 300ms;
-}
 input[type="submit"]{
-    font-size: 30px;
-    margin-top: 140px;
-    width: 300px;
+    outline-style: none;
+    margin-top: 40px;
+    width: 260px;
     cursor:pointer;
 }
 input:focus{
     outline: none;
 }
-#register:hover{
-    background: rgb(255, 255, 255);
-}
-button a{
+input[type="submit"]:hover{
+max-width: 100%;
+font-size: 300px;
+transition-duration: 300ms;
 
-    text-decoration: none;
-    color: whitesmoke;
-    font-size: 30px;
-    padding: 10px
-}
-button{
-    border-radius: 10px;
-    background: rgb(214, 0, 0);
-    outline: none;
 }
