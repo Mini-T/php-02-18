@@ -50,7 +50,7 @@
         
             $postmdp = $_POST['mdp'];
         
-            $logindetection = $pdo->query("SELECT * FROM utilisateur WHERE ign = '$postign' AND mdp = '$postmdp'");
+            $logindetection = $pdo->query("SELECT(*) FROM utilisateur WHERE ign = '$postign' AND mdp = '$postmdp'");
             $fetchassocshowLOGIN = $logindetection->fetch(PDO::FETCH_COLUMN);
             // var_dump($logindetection);
             echo $fetchassocshowLOGIN
