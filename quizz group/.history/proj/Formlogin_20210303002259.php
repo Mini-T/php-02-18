@@ -46,6 +46,7 @@
             $fetchassocshowLOGIN = $logindetection->fetch(PDO::FETCH_ASSOC);
 
             if ($fetchassocshowLOGIN == true) {
+                echo "OUI";
                 header('Location:Accueil.php');
                 exit();
             } else {

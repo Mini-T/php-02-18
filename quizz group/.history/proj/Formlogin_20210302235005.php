@@ -16,6 +16,17 @@
 
         echo "Connection failed: " . $e->getMessage();
     }
+    $SimpleSelect = $pdo->query('SELECT * FROM utilisateur');
+
+    $postign = $_POST['Username'];
+
+    $postmdp = $_POST['mdp'];
+
+    $logindetection = $pdo->query("SELECT COUNT(*) FROM utilisateur WHERE ign = '$postign' AND mdp = '$postmdp'");
+    $fetchassocshowLOGIN = $logindetection->fetch(PDO::FETCH_COLUMN);
+
+    
+
      ?>
 </head>
 
@@ -33,25 +44,17 @@
             <input type="submit" id="login" name="login" value="Login">
             <br>
             <?php 
-            if (!empty($_POST)) {
-                # code...
-          
             $SimpleSelect = $pdo->query('SELECT * FROM utilisateur');
 
             $postign = $_POST['Username'];
         
             $postmdp = $_POST['mdp'];
         
-            $logindetection = $pdo->query("SELECT ign, mdp FROM utilisateur WHERE ign = '$postign' AND mdp = '$postmdp'");
-            $fetchassocshowLOGIN = $logindetection->fetch(PDO::FETCH_ASSOC);
-
-            if ($fetchassocshowLOGIN == true) {
-                header('Location:Accueil.php');
-                exit();
-            } else {
-                echo "Username et mot de passe non correspondant";
-            }
-              }
+            $logindetection = $pdo->query("SELECT ign, email FROM utilisateur WHERE ign = '$postign' AND mdp = '$postmdp'");
+            $fetchassocshowLOGIN = $logindetection->fetch(PDO::FETCH_COLUMN);
+            // var_dump($logindetection);
+            echo $fetchassocshowLOGIN
+            ;
             ?>
 
 

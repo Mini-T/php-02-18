@@ -41,12 +41,9 @@
                     if (!empty($_POST['email'] and $_POST['Username'] and $_POST['mdp'])) {
 
                         $postmail = $_POST['email'];
-                        $method = 'id-aes256-CCM';
+
+                        // $cryptedPostmail = openssl_encrypt($postmail, $key,   );
                         $key = openssl_random_pseudo_bytes(50);
-                        //COMPRENDRE CE QUE CE PUTAIN DE TAG EST, (2:15)
-                        $cryptedPostmail = openssl_encrypt($postmail, $method, $key);
-                        
-                       
                         echo $key;
                         echo $cryptedPostmail ;
                         $postign = $_POST['Username'];

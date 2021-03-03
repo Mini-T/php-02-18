@@ -41,21 +41,14 @@
                     if (!empty($_POST['email'] and $_POST['Username'] and $_POST['mdp'])) {
 
                         $postmail = $_POST['email'];
-                        $method = 'id-aes256-CCM';
-                        $key = openssl_random_pseudo_bytes(50);
-                        //COMPRENDRE CE QUE CE PUTAIN DE TAG EST, (2:15)
-                        $cryptedPostmail = openssl_encrypt($postmail, $method, $key);
-                        
-                       
-                        echo $key;
-                        echo $cryptedPostmail ;
+
                         $postign = $_POST['Username'];
 
                         $postmdp = $_POST['mdp'];
-                        $crypt = md5($_POST['mdp']);
+                        $crypt = md5()
 
 
-                        $register = "INSERT INTO utilisateur(email, ign, mdp) VALUES ('" . $_POST['email'] . "', '" . $_POST['Username'] . "', '" .$_POST['mdp'] . "')";
+                        $register = "INSERT INTO utilisateur(email, ign, mdp) VALUES ('" . $_POST['email'] . "', '" . $_POST['Username'] . "', '" . $_POST['mdp'] . "')";
 
 
                         $SelectCountM = $pdo->query("SELECT COUNT(*) FROM utilisateur WHERE email = '$postmail'");
@@ -66,9 +59,6 @@
                         $fetchassocshowM = $SelectCountM->fetch(PDO::FETCH_COLUMN);
 
                         $fetchassocshowI = $SelectCountI->fetch(PDO::FETCH_COLUMN);
-
-                         
-                        echo '<br>';
 
 
                         if ($fetchassocshowM > 0 or $fetchassocshowI > 0) {
@@ -84,7 +74,7 @@
                                     </p>
                                     <br>
                                     <button><a href="FormLogin.php">Login</a></button>
-                                    
+                                
                                 <?php }
                             
                         } else {

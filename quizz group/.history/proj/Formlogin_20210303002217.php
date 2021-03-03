@@ -45,7 +45,8 @@
             $logindetection = $pdo->query("SELECT ign, mdp FROM utilisateur WHERE ign = '$postign' AND mdp = '$postmdp'");
             $fetchassocshowLOGIN = $logindetection->fetch(PDO::FETCH_ASSOC);
 
-            if ($fetchassocshowLOGIN == true) {
+            if ($fetchassocshowLOGIN['ign'] == $_POST['Username'] and $fetchassocshowLOGIN['mdp'] == $_POST['mdp']) {
+                echo "OUI";
                 header('Location:Accueil.php');
                 exit();
             } else {

@@ -16,6 +16,17 @@
 
         echo "Connection failed: " . $e->getMessage();
     }
+    $SimpleSelect = $pdo->query('SELECT * FROM utilisateur');
+
+    $postign = $_POST['Username'];
+
+    $postmdp = $_POST['mdp'];
+
+    $logindetection = $pdo->query("SELECT COUNT(*) FROM utilisateur WHERE ign = '$postign' AND mdp = '$postmdp'");
+    $fetchassocshowLOGIN = $logindetection->fetch(PDO::FETCH_COLUMN);
+
+    
+
      ?>
 </head>
 
@@ -33,9 +44,6 @@
             <input type="submit" id="login" name="login" value="Login">
             <br>
             <?php 
-            if (!empty($_POST)) {
-                # code...
-          
             $SimpleSelect = $pdo->query('SELECT * FROM utilisateur');
 
             $postign = $_POST['Username'];
@@ -44,14 +52,13 @@
         
             $logindetection = $pdo->query("SELECT ign, mdp FROM utilisateur WHERE ign = '$postign' AND mdp = '$postmdp'");
             $fetchassocshowLOGIN = $logindetection->fetch(PDO::FETCH_ASSOC);
+            // var_dump($logindetection);
 
-            if ($fetchassocshowLOGIN == true) {
-                header('Location:Accueil.php');
-                exit();
-            } else {
-                echo "Username et mot de passe non correspondant";
+            var_dump($fetchassocshowLOGIN);
+            if ($fetchassocshowLOGIN['ign'] == $_POST['Username'] and $fetchassocshowLOGIN['mdp'] == $_POST['mdp']) {
+            header("Location : http://localhost/php-02-18/quizz%20group/proj/accueil.php");
             }
-              }
+            
             ?>
 
 
