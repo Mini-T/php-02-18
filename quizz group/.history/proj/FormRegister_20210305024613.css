@@ -1,0 +1,57 @@
+.champs {
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 40px;
+  height: 70px;
+}
+input[type="submit"] {
+  margin: 0px;
+  size: inherit;
+}
+
+.affi {
+  display: flex;
+  flex-direction: column;
+
+  margin: 10px;
+  height: 500px;
+}
+.card {
+  display: flex;
+  align-content: space-between;
+  width: auto;
+  padding: 20px;
+  margin-top: 10%;
+  height: auto;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.login {
+  width: 100%;
+  height: 50px;
+  bottom: 50px;
+  margin: 20px 0px 0px 0px;
+}
+
+#mdp {
+  margin-bottom: 20px;
+}
+.bottom1{
+    display: inherit;
+    flex-direction: column;
+}
+.affi .login{
+    margin-top: 200px ;
+}
+.titre{
+    
+    font-family: quicksand;
+    margin: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.205),3%,  transparent),
+                linear-gradient(to right, rgba(0, 0, 0, 0.205),3%,  white );
+}

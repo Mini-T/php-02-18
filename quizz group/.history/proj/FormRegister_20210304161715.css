@@ -1,0 +1,21 @@
+.oui{
+    height: 50px;
+    
+}
+.champs{
+    justify-content: center;
+    width: 300px;
+}
+.card{
+    width: 400px;
+    padding: 3px;
+    margin-top: 25%;
+    
+    
+}
+.main{
+    display: flex;
+    justify-content: center ;
+    width: 100%;
+    
+}

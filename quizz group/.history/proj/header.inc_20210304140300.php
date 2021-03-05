@@ -1,0 +1,1 @@
+<script src="vendors.js.bootstrap.js"></script>
