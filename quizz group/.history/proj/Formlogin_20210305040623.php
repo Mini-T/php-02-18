@@ -1,3 +1,12 @@
+<?php if (isset($_COOKIE['memory'])) {
+    session_start();
+    
+    $_SESSION['username'] = $_COOKIE['memory'];
+    $thatuser = $_SESSION['username'];
+    setcookie('memory', $thatuser, time() + 31536000);
+    header("Location: Accueil.php");
+    exit(); }?>
+
 <?php
 include("header.inc.php");
 

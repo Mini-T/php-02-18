@@ -25,7 +25,7 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <?php if (isset($_SESSION['username'])) { ?>
-                    <h6> <?php echo $_SESSION['username'] ?></h6>
+                    <h3> <?php echo $_SESSION['username'] ?></h3>
                 <?php } ?>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

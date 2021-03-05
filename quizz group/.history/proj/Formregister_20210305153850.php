@@ -12,13 +12,13 @@ $SimpleSelect = $pdo->query('SELECT * FROM utilisateur'); ?>
 
 <div class="card" style="width: 18rem;">
     <div class="card-body">
-        <h1 class="card-title titre">Register</h5>
+        <h1 class="card-title">Login</h5>
             <form method="POST" action="#">
-                <input type="text" class="form-control champs" name="email" placeholder="email">
-                <input type="text" class="form-control champs" name="Username" placeholder="Username">
-                <input type="password" class="form-control champs" id="mdp" name="mdp" placeholder="Password">
+                <input type="text" class="form-control" name="email" placeholder="email">
+                <input type="text" class="form-control" name="Username" placeholder="Username">
+                <input type="password" class="form-control" id="mdp" name="mdp" placeholder="Password">
                 <br>
-                <button type="submit" class="btn btn-primary login" name="register">Register</button>
+                <button type="submit" class="btn btn-primary" name="register">Login</button>
             </form>
     </div>
 </div>

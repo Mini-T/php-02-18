@@ -9,25 +9,13 @@
     <script src="vendors/js/bootstrap.js"></script>
     <link rel="stylesheet" href="vendors/css/bootstrap.css">
     <link rel="stylesheet" href="FormRegister.css">
-    <?php if (isset($_COOKIE['memory'])) {
-        session_start();
-
-        $_SESSION['username'] = $_COOKIE['memory'];
-        $thatuser = $_SESSION['username'];
-        setcookie('memory', $thatuser, time() + 31536000);
-    }
-    ?>
 </head>
 
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <?php if (isset($_SESSION['username'])) { ?>
-                    <h6> <?php echo $_SESSION['username'] ?></h6>
-                <?php } ?>
-            </a>
+            <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -56,7 +44,9 @@
                         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                     </li>
                 </ul>
-
+                <?php if (isset($_SESSION['username'])) { ?>
+                    <h1> <?php echo $_SESSION['username'] ?></h1>
+                <?php } ?>
 
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
